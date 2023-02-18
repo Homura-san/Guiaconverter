@@ -1,4 +1,7 @@
-Nome;Curso;Categoria;Tipo
-Sergio Ramos;Formacao Node.js;Node.js;1
-Paulo Seixas;Formacao Python;Python;6
-Carlos Souza;Formacao PHP;PHP;4
+Nome;Curso;Categoria;Tipo;Id
+Sergio Ramos;Formacao Node.js;Node.js;1;1
+Paulo Seixas;Formacao Python;Python;6;1
+Carlos Souza;Formacao PHP;PHP;4;2
+Carlos Souza;Formacao PHP;PHP;4;3
+Carlos Souza;Formacao PHP;PHP;4;4
+Carlos Souza;Formacao PHP;PHP;4;4
