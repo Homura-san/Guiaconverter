@@ -1,8 +1,7 @@
 var Reader = require('./Reader')
 var Processor = require('./Processor')  
 var Table = require('./Table')
-
-const fs = require('fs')
+var HtmlParser = require('./HtmlParser')
 
 var leitor = new Reader();
 
@@ -12,9 +11,9 @@ async function main() {
     var dados = await leitor.Read("./users.csv");
     var dadosProcessados = Processor.Process(dados)
 
-    var usuarios = new Table(dadosProcessados)
+    var usuarios = new Table(dadosProcessados);
 
-    console.log(usuarios.RowCount);
-    console.log(usuarios.ColumnCount);
+    var html = await HtmlParser.Parse(usuarios);
+    console.log(html);
 }
 main();
